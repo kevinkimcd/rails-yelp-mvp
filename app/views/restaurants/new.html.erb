@@ -1,0 +1,8 @@
+<h1>Add Restaurant</h1>
+<%= form_for(@restaurant) do |f| %>
+  Name:<br><%= f.text_field :name %><br>
+  Address:<br><%= f.text_field :address %><br>
+  Phone number:<br> <%= f.text_field :phone_number%><br>
+  Category:<br> <%= f.select :category, ["chinese", "italian", "japanese", "french", "belgian"] %><br>
+  <br><%= f.submit "Add" %>
+<% end %>
